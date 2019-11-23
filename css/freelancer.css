@@ -484,8 +484,13 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
+}
+
+.protofolio-img{
+  width: 20px;
+  height: 20px;
 }
 
 .img-thumbnail {
