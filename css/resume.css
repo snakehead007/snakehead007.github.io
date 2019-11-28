@@ -32,7 +32,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.01rem;
+  font-size: 2rem;
 }
 
 p.lead {
@@ -52,28 +52,25 @@ p.lead {
   height: 3.5rem;
   width: 3.5rem;
   background-color: #495057;
-  color: #fff !important;
+  color: #ffffff !important;
   border-radius: 100%;
   text-align: center;
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
 }
-
 .social-icons a:last-child {
   margin-right: 0;
 }
-
 .social-icons a:hover {
-  background-color: #ffc107;
+  background-color: #6f42c1;
 }
 
 .dev-icons {
   font-size: 3rem;
 }
-
 .dev-icons .list-inline-item i:hover {
-  color: #ffc107;
+  color: #6f42c1;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -81,9 +78,8 @@ p.lead {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-
 #sideNav .navbar-toggler:focus {
-  outline-color: #ffd454;
+  outline-color: #9b7cd4;
 }
 
 @media (min-width: 992px) {
@@ -97,19 +93,16 @@ p.lead {
     width: 17rem;
     height: 100vh;
   }
-
   #sideNav .navbar-brand {
     display: flex;
     margin: auto auto 0;
     padding: 0.5rem;
   }
-
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
-
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
@@ -117,16 +110,13 @@ p.lead {
     width: 100%;
     margin-bottom: auto;
   }
-
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
     width: 100%;
   }
-
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
   }
-
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
@@ -136,7 +126,6 @@ section.resume-section {
   padding-bottom: 5rem !important;
   max-width: 75rem;
 }
-
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -145,7 +134,6 @@ section.resume-section .resume-item .resume-date {
   section.resume-section {
     min-height: 100vh;
   }
-
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
@@ -157,37 +145,18 @@ section.resume-section .resume-item .resume-date {
   }
 }
 .bg-primary {
-  background-color: #ffc107 !important;
+  background-color: #6f42c1 !important;
 }
 
 .text-primary {
-  color: #ffc107 !important;
+  color: #6f42c1 !important;
 }
 
 a {
-  color: #ffc107;
+  color: #6f42c1;
 }
-
 a:hover, a:focus, a:active {
-  color: #ba8b00;
+  color: #4e2d89;
 }
-
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
-/*# sourceMappingURL=resume.css.map */
 
 /*# sourceMappingURL=resume.css.map */
