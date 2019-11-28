@@ -32,7 +32,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.01rem;
 }
 
 p.lead {
@@ -59,18 +59,21 @@ p.lead {
   line-height: 3.5rem;
   margin-right: 1rem;
 }
+
 .social-icons a:last-child {
   margin-right: 0;
 }
+
 .social-icons a:hover {
-  background-color: #6f42c1;
+  background-color: #ffc107;
 }
 
 .dev-icons {
   font-size: 3rem;
 }
+
 .dev-icons .list-inline-item i:hover {
-  color: #6f42c1;
+  color: #ffc107;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -78,8 +81,9 @@ p.lead {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
+
 #sideNav .navbar-toggler:focus {
-  outline-color: #9b7cd4;
+  outline-color: #ffd454;
 }
 
 @media (min-width: 992px) {
@@ -93,16 +97,19 @@ p.lead {
     width: 17rem;
     height: 100vh;
   }
+
   #sideNav .navbar-brand {
     display: flex;
     margin: auto auto 0;
     padding: 0.5rem;
   }
+
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
+
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
@@ -110,13 +117,16 @@ p.lead {
     width: 100%;
     margin-bottom: auto;
   }
+
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
     width: 100%;
   }
+
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
   }
+
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
@@ -126,6 +136,7 @@ section.resume-section {
   padding-bottom: 5rem !important;
   max-width: 75rem;
 }
+
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -134,6 +145,7 @@ section.resume-section .resume-item .resume-date {
   section.resume-section {
     min-height: 100vh;
   }
+
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
@@ -145,18 +157,37 @@ section.resume-section .resume-item .resume-date {
   }
 }
 .bg-primary {
-  background-color: #6f42c1 !important;
+  background-color: #ffc107 !important;
 }
 
 .text-primary {
-  color: #6f42c1 !important;
+  color: #ffc107 !important;
 }
 
 a {
-  color: #6f42c1;
+  color: #ffc107;
 }
+
 a:hover, a:focus, a:active {
-  color: #4e2d89;
+  color: #ba8b00;
 }
+
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=resume.css.map */
 
 /*# sourceMappingURL=resume.css.map */
