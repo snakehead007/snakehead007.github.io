@@ -1,0 +1,4 @@
+/home/karel/projects/snakehead007.github.io/obj/Debug/netcoreapp2.2/snakehead007.github.io.csprojAssemblyReference.cache
+/home/karel/projects/snakehead007.github.io/obj/Debug/netcoreapp2.2/snakehead007.github.io.csproj.CoreCompileInputs.cache
+/home/karel/projects/snakehead007.github.io/obj/Debug/netcoreapp2.2/snakehead007.github.io.AssemblyInfoInputs.cache
+/home/karel/projects/snakehead007.github.io/obj/Debug/netcoreapp2.2/snakehead007.github.io.AssemblyInfo.cs
