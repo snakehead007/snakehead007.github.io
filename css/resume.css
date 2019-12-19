@@ -73,6 +73,16 @@ p.lead {
   color: #6f42c1;
 }
 
+.info {
+  white-space: pre;
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.pre-white {
+  white-space: pre;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
