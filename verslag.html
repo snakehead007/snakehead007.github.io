@@ -16,11 +16,101 @@
       <span class="navbar-brand mb-0 h1">OWASP – Gastcollege PwC(Verslag)</span>
     </nav>
       <div class="jumbotron">
-      <h2>
-        Samenvatting gastcollege
-      </h2>
+      <h2>Hoe bouwen we een veilige software?      </h2>
       <hr>
       <p class="lead">
+        <pre>
+Hierbij kunnen de meeste voorkomende kwetsbaarheden gebruiken van het OWASP.org.
+
+1. Injections:
+  Hier sturen we code of valse informatie in een database.
+  Bijvoorbeeld:
+    In een input field of dataset.
+
+  Hoe kunnen we dit tegen werken?
+    Gebruik zowel frontend als backend validatie op input.
+    Hiervoor is regular expressie een goede tool.
+    Kijk ook steeds of de data dat je krijgt klopt.
+
+2.Niet werkende authenticaties:
+  Login mogelijkheden die kunnen omzeilt worden of niet veilig zijn is onveilig.
+  Bijvoorbeeld:
+    Als een hacker snooped op het netwerk waar een gebruiker zich inlogt op een pagina die niet via SSL is ge-encrypteerd.
+    Dit wilt zeggen dat de inhoud van die pagina ook beschikbaar is voor wie meeluistert op het netwerk.
+
+  Hoe kunnen we dit tegen werken?
+    Gebruik altijd HTTPS. Gebruik multi-factor authentications. Session timeouts, secure cookies, ...
+
+3.Sensitive Data Exposure:
+  Data dat veilig moet staan, moet dan ook op een veilige manier op een veilge plaats terecht komen. Dit is zeker het geval bij paswoorden.
+  Zorg dus ook dat de database ge-encrypteerd staat op een veilige plaats. Als de database publiekelijk toegankelijk is, moet dit zeker een login en passwoord op staan.
+
+  Bijvoorbeeld:
+    Paswoorden die worden opgeslagen op een database moeten nooit in plain text staan in een database.
+    Dit moet ge-hashed worden. Dit is een wiskundige algoritme dat een text naar een hashstring verandered.
+    De volgende keer als een gebruiken zich inlogd, word dat passwoord gehashed (met hetzelfde aantal salt) en vergeleken met dat in de database.
+
+  Hoe kunnen we dit tegen werken?
+    Zoals bij het voorbeeld, passwoorden nooit in plain text opslagen. Databases op een veilige plaats zetten, encrypteren en beveiligen met een login.
+
+4.XML external entities:
+  Dit zijn aanvallen/code injecties via XML parsers.
+  XML parsers zorgen ervoor dat een stuk string of dergelijke wordt omgevormd
+  	naar XML bestand. Een XML bestand is een Markup bestand met data (daarvan
+  de X) .
+
+  Bijvoorbeeld:
+    In een XML bestand kunnen kleine stukken code staat, zoals instellingen.
+    Een hacker kan door een verouderde parser, deze code verouderen door 	commando’s.
+
+  Hoe kunnen we dit tegen werken?
+    JSON gebruiken oftwel een betere en/of nieuwere xml parser zoeken.
+
+5.Broken access control
+  Pagina’s dat achter een paywall of loginwall zitten moeten ook beschermd worden.
+  Als deze niet beschermd worden kunnen we daar gewoon naar surfen zonder ernaar verwijst te worden via een login.
+
+  Bijvoorbeeld:
+    Een admin pagina kan /admin zijn. Nergens staat er ergens een link naar.
+    Maar als je het weet of probeerd naar te surfen, en er staan geen login achter. Kan dit voor problemen zorgen.
+
+  Hoe kunnen we dit tegen werken ?
+    Controleer wie wat beheerd, inloggen en users bijhouden, gebruik sessies voor het gebruik van de user te onthouden waneer hij heeft ingelogd
+
+6.Security misconfiguration:
+  Als servers niet goed beveilig is en zich blootstelt aan alle gebruikers kan het 	heel onveilig zijn.
+  Dit zijn vooral errors, bestanden, en serverinfo.
+
+  Bijvoorbeeld:
+    Een error 500 bestaat er voor een reden, maar als die niet word opgevangen 	word de exacte error van de server geschreven naar de html pagina.
+    Daar staat in welke code wordt gebruikt en welke bestanden
+
+  Hoe kunnen we dit tegen werken?
+    Error code opvangen, geen bestanden die niet nodig zijn publiek zetten, ...
+
+7.Cross Site Scripting XSS
+  Hierbij sturen we code waar we code niet verwachten. Waardoor men scripts kan zetten in een database.
+  Bijvoorbeeld:
+    In een input field.
+
+  Hoe kunnen we dit tegen werken?
+    Gebruik zowel frontend als backend validatie op input.
+    Hiervoor is regular expressie een goede tool.
+8.Insecure desalization:
+  /
+9.Using components with known vulnerabilites:
+  Als bepaalde functies van een bepaald systeem niet meer veilig zijn, best niet 	gebruiken dan.
+
+  Bijvoorbeeld:
+    Een functie van javascript dat duidelijk niet meer mag gebruikt worden.
+    Deze kan worden g gebruikt op veilige data op te halen, of commando’s door te 	sturen.
+
+  Hoe kunnen we dit tegen werken?
+    Altijd kijken dat third-party functies veilig zijn en mogen gebruikt worden.
+    En kijk op de oficiele bronnen welke functies niet meer mogen gebruikt worden.
+
+10.
+        </pre>
       </p>
       </div>
       <hr>
