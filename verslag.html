@@ -11,7 +11,7 @@
     </style>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
     <nav class="navbar navbar-light bg-light">
       <span class="navbar-brand mb-0 h1">OWASP – Gastcollege PwC(Verslag)</span>
     </nav>
@@ -96,8 +96,12 @@ Hierbij kunnen de meeste voorkomende kwetsbaarheden gebruiken van het OWASP.org.
   Hoe kunnen we dit tegen werken?
     Gebruik zowel frontend als backend validatie op input.
     Hiervoor is regular expressie een goede tool.
+
 8.Insecure desalization:
-  /
+  Deserialization kan een aanvaller in staat stellen om code in de applicatie van op afstand uit te voeren,
+  geserialiseerde objecten te wijzigen/verwijderen, of injectie aanvallen uit te voeren.
+  Hoe kan je dit voorkomen? Implementeren van integriteitscontroles zoals digitale handtekeningen op geserialiseerde objecten.
+
 9.Using components with known vulnerabilites:
   Als bepaalde functies van een bepaald systeem niet meer veilig zijn, best niet 	gebruiken dan.
 
@@ -109,15 +113,18 @@ Hierbij kunnen de meeste voorkomende kwetsbaarheden gebruiken van het OWASP.org.
     Altijd kijken dat third-party functies veilig zijn en mogen gebruikt worden.
     En kijk op de oficiele bronnen welke functies niet meer mogen gebruikt worden.
 
-10.
+10.Veel webapplicaties ondernemen onvoldoende stappen om datalekken op te sporen.
+ Dit zet aanvallers in staat om regelmatig over te stappen naar andere systemen en bedreigingen.
+ Je kan niet aannemen dat de preventiemaatregelen hun werk doen, dus raad OWASP aan om voldoende logging/monitoring te doen,
+ en een plan te hebben voor wanneer er iets misgaat.
         </pre>
       </p>
       </div>
       <hr>
       <div class="jumbotron">
-        <h2>1 cyberartikel - BIV-classificatie</h2>
+        <h2>4 cyberartikel - BIV-classificatie</h2>
         <hr>
-          <ul>
+          <ol>
             <li>
 
               <h4>Integrity </h1>
@@ -132,9 +139,44 @@ Hierbij kunnen de meeste voorkomende kwetsbaarheden gebruiken van het OWASP.org.
 
             </li>
             <li>
-
+              <h4>Confidentiality </h1>
+                <p>
+                  Hacker lekt wachtwoorden van meer dan 500.000 servers, routers en IoT apparaten.
+  De lijst, die gepubliceerd is op een populair hackforum bevat het IP-adres van elk apparaat, samen met de gebruikersnaam, het wachtwoord en
+  een RAS-protocol dat kan worden gebruikt om de apparaten via het internet te bedienen.
+                </p>
+              <blockquote class="blockquote">
+                <footer class="blockquote-footer">
+                  <a lass="btn btn-secondary btn-small" role="button" href="https://www.zdnet.com/article/hacker-leaks-passwords-for-more-than-500000-servers-routers-and-iot-devices/">Artikel</a>
+                </footer>
+              </blockquote>
             </li>
-          </uul>
+            <li>
+              <h4>Integrity </h1>
+                <p>
+                  CipherTrace onderzoek vindt insiderfraude bij Skyrocketed in 2019.
+Het onderzoek wijst uit dat er een totaal van 4.5 miljard dollar aan crypto misdaad verliezen zijn.
+                </p>
+              <blockquote class="blockquote">
+                <footer class="blockquote-footer">
+                  <a lass="btn btn-secondary btn-small" role="button" href="https://securityboulevard.com/2019/09/simple-voice-command-sql-injection-hack-into-alexa-application/">Artikel</a>
+                </footer>
+              </blockquote>
+            </li>
+            <li>
+              <h4>Availability </h1>
+                <p>
+                  DevOps waarschuwt: 12.000 Jenkins-servers blootgesteld aan DoS-aanvallen,
+dit blijkt uit een beveiligingsonderzoek.
+Het wil dus zeggen dat wereldwijd zo een 12.000 cloud automatisering servers kunnen worden gekaapt.
+                </p>
+              <blockquote class="blockquote">
+                <footer class="blockquote-footer">
+                  <a lass="btn btn-secondary btn-small" role="button" href="https://www.infosecurity-magazine.com/news/12000-jenkins-servers-exposed-to/">Artikel</a>
+                </footer>
+              </blockquote>
+            </li>
+          </ol>
       </div>
       <hr>
       <div class="jumbotron">
@@ -155,24 +197,28 @@ Hierbij kunnen de meeste voorkomende kwetsbaarheden gebruiken van het OWASP.org.
       </div>
       <hr>
       <div class="jumbotron">
-        <h2>Hoe helpt OWASP in project? </h2>
-        <hr>
-
-      </div>
-      <hr>
-      <div class="jumbotron">
         <h2>Mijn digitale fingerprint</h2>
         <hr>
-              <img src="https://i.imgur.com/QlVV0Zt.png" alt="" style="max-width:80%">
+        <p class="lead">Dit is mijn digitale fingerprint. Aangezien ik bijna enkel Linux (Manjaro) gebruik wordtt ik al veel minder ge-tracet dan een normale gebruiker. Maar ander maatregelingen naam ik ook:</p>
+        <ul>
+          <li>Ik gebruik constant een VPN (virtual private network)</li>
+          <li>Ik gebruik firefox, met de strengste settings. ik blokeer alle third-party cookies</li>
+          <li>ik gebruik de volgende addons:
+            <ul>
+              <li>Noscript: blokeert alle javascripts en XSS attacks.</li>
+              <li>HTTPS everywhere: Zorgt ervoor dat ik enkel https sites bekijk</li>
+              <li>Privacy badger: Blokkeer alle trackers online</li>
+              <li>decentraleyes: ipv CDN's online te gebruiken, gaat deze addon het lokaal zetten. voor betere privaivacy</li>
+            </ul>
+          </li>
+          <li>Mijn cache en cookies worden ook telkens verwijdert nadat ik firefox afsluit. Enkel bepaalde sites die ik gekozen heb zullen niet verijwdert worden</li>
+          <li>Online accounts van Microsoft en google heb ik verwijder. Door mijn privacy te verhogen</li>
+          <li>Zelfs als besturingsysteem van mijn smartphone gebruik ik LineageOS, dit is een custom Android OS  Speciaal voor privacy gemaakt</li>
+          <li>Ook gebruik ik een passwoord manager, voor gevallen als data breaches.</li>
+        </ul>
+              <img src="https://i.imgur.com/QlVV0Zt.png" alt="" style="max-width:100%">
         </div>
         <hr>
-        <div class="jumbotron">
-          <h2>Cookies</h2>
-          <hr>
-
-            <p>Het zoeken en verwijderen van de bijgehouden cookies voor websites: kpn.nl, kbc.be, siriuslegaladvocaten.be</p>
-
-    </div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
   </body>
