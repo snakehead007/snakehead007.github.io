@@ -164,6 +164,12 @@ section.resume-section .resume-item .resume-date {
   color: #6f42c1 !important;
 }
 
+.tool{
+  color:#868e96 !important;
+}
+.tool:hover{
+  color:#6f42c1 !important;
+}
 a {
   color: #6f42c1;
 }
@@ -176,13 +182,3 @@ a:hover, a:focus, a:active {
 .social-box{
   display: contents;
 }
-.tool{
-  color:#868e96 !important;
-}
-.tool:hover{
-  color:#6f42c1 !important;
-}
-
-
-
-/*# sourceMappingURL=resume.css.map */
