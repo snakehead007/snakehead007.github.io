@@ -176,6 +176,12 @@ a:hover, a:focus, a:active {
 .social-box{
   display: contents;
 }
+a.tool{
+  color:#868e96 !important;
+}
+a.tool:hover{
+  color:#6f42c1 !important;
+}
 
 
 
