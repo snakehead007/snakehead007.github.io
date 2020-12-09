@@ -16,7 +16,8 @@
             </li>
             <li>
                 <label for="geboortedatum">geboortedatum</label>
-                <input id='geboortedatum' type="text" pattern="\d{1,2}/\d{1,2}/\d{4}">
+                <input id='geboortedatum' type="text">
+                <input id='test' type="date">
             </li>
         </ul>
         <input type="submit" value="submit" role='submit'>
@@ -38,6 +39,7 @@
             $("#" + id_van_input_veld_geboortedatum).attr("type", 'date');
             $("#"+id_van_input_veld_geboortedatum).attr('pattern',"\\d{1,2}/\\d{1,2}/\\d{4}");
             $('#'+id_van_input_veld_geboortedatum).attr('max',getMaxDate());
+            $("#"+id_van_input_veld_geboortedatum).attr('placeholder',"dd/mm/yyyy");
             $("#" + id_van_input_veld_rijksregisternummer).focusout(
                 function () {
                     var r = $(this).val();
@@ -49,6 +51,9 @@
                     } else {
                         var c1 = r.substr(9);
                         var c2 = String(97 - (r.substr(0, 9) % 97));
+                        if(c2<10){
+                            c2='0'+c2
+                        }
                         if (c1 != c2) {
                             window.alert("Foutief rijksregisternummer");
                             $(this).val('');
