@@ -29,7 +29,7 @@ function createBg(src,extraClass){
     }
     return image;
 }
-
+``
 function createCloud(src,speed){
     const sky = document.createElement('div');
     sky.classList.add(`wind${speed}`);
