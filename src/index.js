@@ -21,7 +21,7 @@ function addClouds(){
 
 function createBg(src,extraClass){
     const image = document.createElement('img');
-    image.src = `/dist/images/parallax/${src}`;
+    image.src = `/images/parallax/${src}`;
     image.classList.add('fill');
     image.classList.add("bg");
     if(extraClass){
