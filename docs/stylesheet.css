@@ -21,6 +21,8 @@ section {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    position: fixed;
+    width: 100vw;
   }
 .message {
     height: 100px;
