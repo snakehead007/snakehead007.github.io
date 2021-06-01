@@ -37,7 +37,7 @@ function createCloud(src,speed){
     sky.style.cssText =`animation: wind ${speed}s linear infinite;`;
     for (let i = 0; i < 10; i++) {
         const cloud = document.createElement('img');
-        cloud.src = `/dist/images/parallax/${src}`;
+        cloud.src = `/images/parallax/${src}`;
         cloud.classList.add('cloud');
         sky.appendChild(cloud);
     }
