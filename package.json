@@ -1,0 +1,28 @@
+{
+  "name": "snakehead007.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "webpack watch --mode development",
+    "watch": "webpack watch --mode production",
+    "build": "webpack build --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snakehead007/snakehead007.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snakehead007/snakehead007.github.io/issues"
+  },
+  "homepage": "https://github.com/snakehead007/snakehead007.github.io#readme",
+  "dependencies": {
+    "parallax-js": "^3.1.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
